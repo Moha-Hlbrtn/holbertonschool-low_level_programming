@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * Déclaration d'un prototype sans paramètres
@@ -12,4 +12,15 @@ void print_alphabet(void);
  */
 int main(void)
 {
-	_putchar(
+	int alphabet = 'a';
+		
+		while (alphabet < 'z')
+		{
+			_putchar(alphabet);
+			alphabet++;
+		}
+
+	_putchar('\n');
+
+	return (0);
+}
