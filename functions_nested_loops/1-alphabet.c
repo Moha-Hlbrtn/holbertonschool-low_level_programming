@@ -1,26 +1,18 @@
 #include "main.h"
 
 /**
- * Déclaration d'un prototype sans paramètres
- */
-void print_alphabet(void);
-
-/**
  * main - check the code
  *
- * Return: Always 0.
+ * Return: Always (0)
  */
-int main(void)
+void print_alphabet(void)
 {
-	int alphabet = 'a';
-		
-		while (alphabet < 'z')
+	char print_alphabet;
+	
+	for (print_alphabet = 'a'; print_alphabet <= 'z'; print_alphabet++)
 		{
-			_putchar(alphabet);
-			alphabet++;
+			_putchar(print_alphabet);
 		}
 
 	_putchar('\n');
-
-	return (0);
 }
