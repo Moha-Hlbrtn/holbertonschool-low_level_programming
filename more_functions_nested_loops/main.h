@@ -12,5 +12,6 @@ void print_line(int n); /* Déclaration de la fonction print_line */
 void print_diagonal(int n); /* Déclaration de la fonction print_diagonal */
 void print_square(int size); /* Déclaration de la fonction print_square */
 void print_triangle(int size); /* Déclaration de la fonction print_triangle */
+int _putchar(char c); /* Déclaration de la fonction _putchar */
 
 #endif
