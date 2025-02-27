@@ -7,7 +7,7 @@
  * @dest: the first parameter
  * @src: the second  parameter to be concatenated
  * @n: the parameter containing n bytes
- * 
+ *
  * Return: a pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
