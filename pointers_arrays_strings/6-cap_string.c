@@ -10,18 +10,19 @@
 char *cap_string(char *s)
 {
 	int i = 0;
-	char separators[] = " \t\n,;.!?\"(){}";
-
-	while (s[i] != '\0')
-	{
-		if (i == 0 || strchr(separators, s[i-1]) != NULL)
-		{
-			if (s[i] >= 'a' && s[i] <= 'z')
-			{
+	while (s[i] != '\0') {
+		if (i == 0 || (s[i-1] == ' ' || s[i-1] == '\t' || s[i-1] == '\n' ||
+					s[i-1] == ',' || s[i-1] == ';' || s[i-1] == '.' ||
+					s[i-1] == '!' || s[i-1] == '?' || s[i-1] == '"' ||
+					s[i-1] == '(' || s[i-1] == ')' || s[i-1] == '{' ||
+					s[i-1] == '}')) {
+			if (s[i] >= 'a' && s[i] <= 'z') {
 				s[i] = s[i] - ('a' - 'A');
 			}
 		}
 		i++;
 	}
-	return s;
+
+
+	return (s);
 }
