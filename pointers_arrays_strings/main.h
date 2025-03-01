@@ -20,5 +20,8 @@ int _strcmp(char *s1, char *s2); /* Déclaration de la fonction *_strcmp */
 void reverse_array(int *a, int n); /* Déclaration de la fonction reverse_array */
 char *string_toupper(char *); /* Déclaration de la fonction *string_toupper */
 char *cap_string(char *); /* Déclaration de la fonction *cap_string */
+char *leet(char *); /* Déclaration de la fonction leet */
+char *rot13(char *); /* Déclaration de la fonction rot13 */
+void print_number(int n); /* Déclaration de la fonction print_number */
 
 #endif
