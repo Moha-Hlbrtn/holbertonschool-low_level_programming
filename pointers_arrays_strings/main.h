@@ -23,5 +23,13 @@ char *cap_string(char *); /* Déclaration de la fonction *cap_string */
 char *leet(char *); /* Déclaration de la fonction leet */
 char *rot13(char *); /* Déclaration de la fonction rot13 */
 void print_number(int n); /* Déclaration de la fonction print_number */
+char *_memset(char *s, char b, unsigned int n); /* Déclaration de la fonction *_memset */
+char *_memcpy(char *dest, char *src, unsigned int n);
+char *_strchr(char *s, char c);
+unsigned int _strspn(char *s, char *accept);
+char *_strpbrk(char *s, char *accept);
+char *_strstr(char *haystack, char *needle);
+void print_chessboard(char (*a)[8]);
+void print_diagsums(int *a, int size);
 
 #endif
